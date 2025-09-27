@@ -9,7 +9,7 @@ class PaymentDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: custom_app_bar(context, 'Payment Details'),
-      
+
       body: PaymentDetailsBody(),
     );
   }
