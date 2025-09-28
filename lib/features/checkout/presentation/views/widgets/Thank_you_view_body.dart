@@ -168,34 +168,37 @@ class ThankYouViewBody extends StatelessWidget {
         ),
         Positioned(
           right: 1,
-          top: MediaQuery.of(context).size.height * 0.65,
+          top: MediaQuery.of(context).size.height * 0.69,
           child: CircleAvatar(radius: 20, backgroundColor: Colors.white),
         ),
         Positioned(
           left: 1,
-          top: MediaQuery.of(context).size.height * 0.65,
+          top: MediaQuery.of(context).size.height * 0.69,
           child: CircleAvatar(radius: 20, backgroundColor: Colors.white),
         ),
         Positioned(
-          top: MediaQuery.of(context).size.height * 0.671,
+          top: MediaQuery.of(context).size.height * 0.711,
           left: MediaQuery.of(context).size.width * 0.1,
-          child: Row(
-            children: [
-              ...List.generate(
-                MediaQuery.of(context).size.width ~/ 13.8,
-                (index) => Padding(
-                  padding: const EdgeInsets.only(right: 2),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(2),
-                      color: Color(0xffB8B8B8),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10.5),
+            child: Row(
+              children: [
+                ...List.generate(
+                  MediaQuery.of(context).size.width ~/ 14.2,
+                  (index) => Padding(
+                    padding: const EdgeInsets.only(right: 2),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(2),
+                        color: Color(0xffB8B8B8),
+                      ),
+                      height: 4,
+                      width: 9,
                     ),
-                    height: 4,
-                    width: 9,
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ],
