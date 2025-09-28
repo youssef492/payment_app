@@ -67,7 +67,7 @@ class ThankYouViewBody extends StatelessWidget {
                 TotalPrice(title: 'Total', price: '50'),
                 SizedBox(height: 30),
                 Container(
-                  width: MediaQuery.of(context).size.width * 0.5,
+                  width: MediaQuery.of(context).size.width * 0.8,
                   height: 73,
                   decoration: ShapeDecoration(
                     color: Colors.white,
@@ -103,6 +103,7 @@ class ThankYouViewBody extends StatelessWidget {
                           ],
                         ),
                       ),
+                      SizedBox(width: 20),
                     ],
                   ),
                 ),
@@ -110,7 +111,11 @@ class ThankYouViewBody extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Image.asset('assets/images/barcode.png'),
+                    Image.asset(
+                      'assets/images/barcode.png',
+                      width: 142,
+                      height: 71,
+                    ),
                     Container(
                       width: 113,
                       height: 58,

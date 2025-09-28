@@ -8,7 +8,16 @@ void main() {
   runApp(const MyCartView());
 }
 
-// paymentIntentObject create payment intent (amount , currency)
+// create payment intent (amount , currency)
 // init payment sheet (paymentIntentClientSecret)
 // display payment sheet
 // confirm payment sheet
+
+
+//////////////////////////////////////////////////////////
+///
+///// create payment intent (amount , currency , customer id)
+///create ephemeral key (stripe version , customer id)
+/// init payment sheet (merchant display name, customer id, paymentIntentClientSecret, ephemeralKeySecret)
+/// display payment sheet
+/// confirm payment sheet
